@@ -1,7 +1,8 @@
 {
-  "name": "interactive-chord-core",
+  "name": "chord-engine-core",
   "version": "0.1.0",
-  "description": "Reusable chord logic and playback engine extracted from the Interactive Chord Generator.",
+  "description": "Chord detection, MIDI utilities, voicing resolution, and Tone.js playback engines for music applications.",
+  "author": "Yehuda Levy",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -18,10 +19,41 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "chord",
+    "music",
+    "midi",
+    "audio",
+    "tone",
+    "music-theory",
+    "chord-detection",
+    "voicing",
+    "progression",
+    "synth",
+    "web-audio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yehudalevy-collab/Interactive-chord-generator.git",
+    "directory": "packages/chord-core"
+  },
+  "homepage": "https://github.com/yehudalevy-collab/Interactive-chord-generator#readme",
+  "bugs": {
+    "url": "https://github.com/yehudalevy-collab/Interactive-chord-generator/issues"
   },
   "dependencies": {
     "tone": "^15.1.22"
+  },
+  "peerDependencies": {
+    "tone": "^15.0.0"
+  },
+  "peerDependenciesMeta": {
+    "tone": {
+      "optional": false
+    }
   },
   "license": "CC-BY-4.0"
 }

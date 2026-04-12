@@ -1,0 +1,27 @@
+{
+  "name": "interactive-chord-core",
+  "version": "0.1.0",
+  "description": "Reusable chord logic and playback engine extracted from the Interactive Chord Generator.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "tone": "^15.1.22"
+  },
+  "license": "CC-BY-4.0"
+}

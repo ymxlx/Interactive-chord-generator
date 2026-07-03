@@ -4,6 +4,8 @@
 
 A browser-based music workspace for building chords from individual notes, shaping them with voicing controls, auditioning them through four synthesized instruments, and arranging them into loopable progressions — all powered by the Web Audio API.
 
+![Interactive Chord Generator — chromatic pad, two-octave keyboard, and chord workbench](docs/screenshot.jpg)
+
 ## Features
 
 - **Chromatic note selection** — pick notes from a colourful 12-note pad, a two-octave piano keyboard, or an animated chromatic circle that draws interval lines in real time.

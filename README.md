@@ -1,5 +1,7 @@
 # Interactive Chord Generator
 
+[![ci](https://github.com/yehudalevy-collab/Interactive-chord-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/yehudalevy-collab/Interactive-chord-generator/actions/workflows/ci.yml)
+
 A browser-based music workspace for building chords from individual notes, shaping them with voicing controls, auditioning them through four synthesized instruments, and arranging them into loopable progressions — all powered by the Web Audio API.
 
 ## Features

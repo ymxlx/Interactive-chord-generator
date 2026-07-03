@@ -1,14 +1,13 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
-import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "interactive-chord-core": path.resolve(
-        __dirname,
-        "../../packages/chord-core/src/index.ts"
+      "interactive-chord-core": fileURLToPath(
+        new URL("../../packages/chord-core/src/index.ts", import.meta.url)
       )
     }
   },

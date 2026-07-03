@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace interactive-chord-generator-web",
-    "build": "npm run build --workspace interactive-chord-core && npm run build --workspace interactive-chord-generator-web",
+    "build": "npm run build --workspace chord-engine-core && npm run build --workspace interactive-chord-generator-web",
     "test": "npm run test --workspace interactive-chord-generator-web"
   }
 }

@@ -7,7 +7,7 @@ export default function ChordPresets() {
   const addChordToDraft = useChordStore((state) => state.addChordToDraft);
   const resetDraft = useChordStore((state) => state.resetDraft);
 
-  const loadPreset = (preset: (typeof PRESET_PROGRESSIONS)[0]) => {
+  const loadPreset = (preset: (typeof PRESET_PROGRESSIONS)[number]) => {
     resetDraft();
 
     preset.degrees.forEach((degree) => {

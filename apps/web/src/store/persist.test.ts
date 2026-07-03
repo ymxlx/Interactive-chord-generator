@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { STORAGE_KEY, defaultPersistedState, loadStoredState, parseStoredState, saveStoredState } from "./persist";
+import type { PersistedChordState } from "../types/music";
 
 describe("persist helpers", () => {
   beforeEach(() => {
@@ -11,7 +12,7 @@ describe("persist helpers", () => {
   });
 
   it("saves and hydrates persisted state from localStorage", () => {
-    const nextState = {
+    const nextState: PersistedChordState = {
       ...defaultPersistedState,
       selectedPitchClasses: ["C", "E", "G"],
       progressionDraft: {

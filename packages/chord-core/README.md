@@ -2,7 +2,7 @@
 
 Chord detection, MIDI utilities, voicing resolution, and Tone.js playback engines for music applications.
 
-This package is the standalone logic layer extracted from the [Interactive Chord Generator](https://github.com/yehudalevy-collab/Interactive-chord-generator). It has **zero UI dependencies** — bring your own framework or use it headless.
+This package is the standalone logic layer extracted from the [Interactive Chord Generator](https://github.com/ymxlx/Interactive-chord-generator). It has **zero UI dependencies** — bring your own framework or use it headless.
 
 ## Install
 
